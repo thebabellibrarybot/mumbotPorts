@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from 'axios';
 
 import useTheme from "../hooks/useTheme"
 
@@ -7,10 +8,20 @@ import CVOBJ from '../pgcomponents/cvobj';
 
 const CV = () => {
 
-    const { isDarkMode } = useTheme();
-    const [visible, setVisible] = useState(false);
-    // call to get info for obj from backend
+    const path = window.location.pathname;
+    const [data, setData] = useState();
+    useEffect (() => {
+        axios.get(`${path}`)
+        .then((res) => {
+            setData(res.data)
+        })
+        .catch((err) => console.log(err))
+    }, [path])
+    console.log(data, 'data from axios req in cv')
 
+    const { isDarkMode } = useTheme();
+
+    const [visible, setVisible] = useState(false);
     function onoffClick() {
         setVisible(!visible)
     }

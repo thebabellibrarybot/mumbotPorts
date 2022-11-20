@@ -31,7 +31,7 @@ function App() {
             <Route path = "/babport" element = { <BabPort/> }/>
             <Route path = "/lionport" element = { <LionPort /> }/>
             <Route path = "/bhgport" element = { <BhgPort/> }/>
-            <Route path = "/cv" element = { <Cv/> }/>
+            <Route path = "/home/:id" element = { <Cv/> }/>
           </Routes>
 
 

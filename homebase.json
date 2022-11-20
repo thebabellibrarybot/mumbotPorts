@@ -1,0 +1,15 @@
+[
+    {
+        "section_type": "cv",
+        "title_head": "CV",
+        "title_sub": "",
+        "base_image": "pdf image of cv from s3buk",
+        "base_title": "",
+        "base_link": "link to cv for download???",
+        "base_subtitle": "check the link to contact me <3",
+        "base_cont": [{"senctence": "one sentence", "image": "image link"},
+                    {"senctence": "two sentence", "image": "image link"},
+                    {"senctence": "three sentence", "image": "image link"},
+                    {"senctence": "four sentence", "image": "image link"}]
+    }
+]

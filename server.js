@@ -7,6 +7,9 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const corsOptions = require('./backend/config/corsOptions');
 const credentials = require('./backend/middleware/credentials');
+ 
+const getHomeBaseRoutes = require('./backend/routes/homebaseRoute');
+
 
 const mongoose = require('mongoose');
 const app = express();
@@ -41,7 +44,10 @@ connection.once('open', () => {
     console.log('md conn')
 })
 
+// routes
 
+// get home info
+app.use('/home', getHomeBaseRoutes);
 
 
 
