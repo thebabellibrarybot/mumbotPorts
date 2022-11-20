@@ -1,0 +1,42 @@
+@use '../scss/colors';
+
+
+
+.flex {
+
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 99%;
+    width: 99%;
+    border: 5px solid black;
+
+}
+
+.light {
+    .text{
+
+        color: #101113;
+        background-color: #1971c2;
+
+    }
+    .background {
+
+        background-color: #1971c2;
+    
+    }
+}
+.dark {
+    .text{
+
+        color: #1971c2;
+        background-color: #101113;
+
+    }
+    .background {
+
+        background-color: #101113;
+    
+    }
+}
