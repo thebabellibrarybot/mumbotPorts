@@ -1,0 +1,96 @@
+.light {
+    .homepg {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+    }
+    .infobar {
+        z-index: 9;
+        display: inline;
+        align-items: center;
+        vertical-align: middle;
+        text-align: center;
+        padding: 10px;
+        width: 90%;
+        height: 90%;
+        z-index: 9;
+        background-color: #ffffff7d;
+        border: 1px solid rgb(180, 179, 179);
+        border-radius: 25px;
+        -moz-border-radius: 15px;
+        max-width: 80%;
+    }
+    .titlebar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        background-color: transparent;    
+    }
+    .titlebar h1 {
+    background-color: transparent; 
+    color: #999999;
+    }
+    .iconbar {
+    background-color: transparent;
+    padding: 5px;
+    }
+    .iconbar p {
+        background-color: transparent;
+    }
+}
+
+
+.dark {
+    .homepg {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        vertical-align: middle;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(23, 25, 44);
+    }
+    .infobar {
+        z-index: 9;
+        display: inline;
+        align-items: center;
+        vertical-align: middle;
+        text-align: center;
+        padding: 30px;
+        width: 90%;
+        height: 90%;
+        z-index: 9;
+        background-color: transparent;
+        border: 1px solid rgb(202, 217, 124);
+        border-radius: 25px;
+        -moz-border-radius: 15px;
+        max-width: 80%;
+    }
+    .titlebar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        background-color: transparent;    
+    }
+    .titlebar h1 {
+    background-color: transparent;
+    color: rgb(202, 217, 124);
+    }
+    .iconbar {
+    background-color: transparent;
+    padding: 5px;
+    }
+    .iconbar p {
+        background-color: transparent;
+    }
+}

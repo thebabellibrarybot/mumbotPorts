@@ -6,7 +6,6 @@ const getHomeBaseInfo = async (req, res) => {
     const query = {
         section_type: id
     }
-
     const homebaseinfo = await HomeBaseModel.find(query)
     if (!homebaseinfo){
         return res.status(404).json({err:'no such homebaseinfo'})

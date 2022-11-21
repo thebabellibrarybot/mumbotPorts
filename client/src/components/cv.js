@@ -17,7 +17,6 @@ const CV = () => {
         })
         .catch((err) => console.log(err))
     }, [path])
-    console.log(data, 'data from axios req in cv')
 
     const { isDarkMode } = useTheme();
 
@@ -25,22 +24,23 @@ const CV = () => {
     function onoffClick() {
         setVisible(!visible)
     }
-
-
-
+    
+    if (data === undefined) {
+        return <>Still loading...might not ever stop...</>; 
+        }
 
     return (
         <div className={isDarkMode ? 'light' : 'dark'}>
-        <div className='homepage'>
-            <div className='welcomebar'>
-                <div className='mainbar'>
-                    <h1 onClick={onoffClick}>Welcome</h1>
-                    <div className='prof'>
+        <div className='homepg'>
+            <div className='infobar'>
+                <div className='titlebar'>
+                    <h1 onClick={onoffClick}>{data[0].title_head}</h1>
+                    <div className='iconbar'>
                         <HomeBaseIcon/>
                     </div>
                 </div>
-                <div class = {visible ? 'listobj' : 'invisible'}>
-                    <CVOBJ/>
+                <div className = 'listobj'>
+                    <CVOBJ props = {data}/>
                 </div>
             </div>
         </div>
@@ -56,3 +56,12 @@ export default CV;
 // mk CVOBJ just OBJ and pass props from backend to it
 // mk welcome a home tab
 // mk styles for CVOBJ
+
+
+/*
+{data && data.body.map((body)=>{
+                        return (
+                            <p>{data.title_card}</p>
+                        )
+                    })}
+                    */
