@@ -35,6 +35,9 @@
     background-color: transparent; 
     color: #999999;
     }
+    .mainbar :hover {
+        color: #5c5c5c;
+    }
     .prof {
     background-color: transparent;
     padding: 5px;
@@ -66,7 +69,7 @@
         padding: 10px;
         z-index: 9;
         background-color: transparent;
-        border: 1px solid rgb(202, 217, 124);
+        border: 1px solid #cad97c;
         border-radius: 25px;
         -moz-border-radius: 15px;
         max-width: 80%;
@@ -81,6 +84,9 @@
     .mainbar h1 {
     background-color: transparent;
     color: rgb(202, 217, 124);
+    }
+    .mainbar :hover {
+        color: #f7ffcf;
     }
     .prof {
     background-color: transparent;

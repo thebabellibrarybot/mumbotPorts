@@ -6,7 +6,7 @@ import SlideToggle from './slideToggle';
 import useTheme from '../hooks/useTheme';
 import ManageUserIcon from '../pgcomponents/manageusericon.js';
 import AboutContact from '../pgcomponents/aboutcontact.js';
-
+import HomeIcon from '../pgcomponents/homeicon';
 
 const Svg = () => {
 
@@ -33,6 +33,9 @@ const Svg = () => {
                 </div>
                 <div className='slideicon'>
                     <AboutContact/>
+                </div>
+                <div className='slideicon'>
+                    <HomeIcon/>
                 </div>
             </div>
 

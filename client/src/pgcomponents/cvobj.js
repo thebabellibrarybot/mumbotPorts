@@ -1,3 +1,5 @@
+import image from '../cv.jpg';
+
 const usericon = (props) => {
     
     console.log(props.props[0], 'props')
@@ -6,9 +8,18 @@ const usericon = (props) => {
     
 
     return (
-        <div className="usericon">
-            <p>user icon</p>
-            <p>{data.base_subtitle}</p>
+        <div className="fullObj">
+            <div className="mainObj">
+                <p>{data.title_head} icons</p>
+                <p>{data.base_subtitle}</p>
+                <div className='imgbox'>
+                    <p>imgbox</p>
+                    <img src = {image}/>
+                </div>
+
+            </div>
+            <div className="backgroundIMG">
+            </div>
         </div>
     )
 }

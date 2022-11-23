@@ -24,6 +24,9 @@
         padding: 10px;
         background-color: transparent;
     }
+    .out :hover {
+        color: #5c5c5c;
+    }
 }
 
 .dark {
@@ -39,7 +42,7 @@
         border: 1px solid #cad97c;
         border-radius: 25px;
         -moz-border-radius: 15px;
-        background-color: #4950288e;
+        background-color: #3c42218e;
         overflow-x: scroll
     
     }
@@ -51,5 +54,8 @@
     .out {
         padding: 10px;
         background-color: transparent;
+    }
+    .out :hover {
+        color: #fbffe7;
     }
 }

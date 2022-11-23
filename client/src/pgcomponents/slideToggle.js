@@ -25,7 +25,7 @@ const SlideToggle = () => {
     <div className='switch'>
         <p className='txt'>mode: {isDarkMode ? 'light' : 'dark'}</p>
         <ReactSwitch onChange={switchTheme} checked={checked}/>
-    </div>
+    </div> 
     </div>
     )
 

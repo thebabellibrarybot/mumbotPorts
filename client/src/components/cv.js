@@ -37,7 +37,7 @@ const CV = () => {
                     <h1 onClick={onoffClick}>{data[0].title_head}</h1>
                     <div className='iconbar'>
                         <HomeBaseIcon/>
-                    </div>
+                    </div> 
                 </div>
                 <div className = 'listobj'>
                     <CVOBJ props = {data}/>

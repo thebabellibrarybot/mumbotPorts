@@ -17,8 +17,8 @@
         vertical-align: middle;
         text-align: center;
         padding: 10px;
-        width: 90%;
-        height: 90%;
+        width: 80%;
+        height: 80%;
         z-index: 9;
         background-color: #ffffff7d;
         border: 1px solid rgb(180, 179, 179);
@@ -66,8 +66,8 @@
         vertical-align: middle;
         text-align: center;
         padding: 30px;
-        width: 90%;
-        height: 90%;
+        width: 80%;
+        height: 80%;
         z-index: 9;
         background-color: transparent;
         border: 1px solid rgb(202, 217, 124);
@@ -80,7 +80,8 @@
         align-items: center;
         justify-content: space-between;
         text-align: center;
-        background-color: transparent;    
+        background-color: transparent;   
+
     }
     .titlebar h1 {
     background-color: transparent;
@@ -92,5 +93,8 @@
     }
     .iconbar p {
         background-color: transparent;
+    }
+    .listobj {
+        height: 85%;
     }
 }
