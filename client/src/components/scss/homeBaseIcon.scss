@@ -1,6 +1,5 @@
 .light {
     background-color: transparent;
-
     .invisible {
         display: none;
     }
@@ -27,15 +26,15 @@
         background-color: transparent;
     }
     .homeicons {
-        display: flex;
         background-color: transparent;
-        padding: 5px;
-    } 
+    }
     .homeicons p {
         color: #999999;
         background-color: transparent;
     }
     .slideicon {
+        display: flex;
+        overflow: auto;
         background-color: transparent;
     }
     .usericon {
@@ -77,15 +76,15 @@
         background-color: transparent;
     }
     .homeicons {
-        display: flex;
         background-color: transparent;
-        padding: 5px;
     }
     .homeicons p {
         color: hwb(70 49% 15%);
         background-color: transparent;
     }
     .slideicon {
+        display: flex;
+        overflow: auto;
         background-color: transparent;
     }
     .usericon {

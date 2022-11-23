@@ -22,14 +22,15 @@
         border: 1px solid rgb(180, 179, 179);
         border-radius: 25px;
         -moz-border-radius: 15px;
-        max-width: 80%;
+        max-width: 92%;
     }
     .mainbar {
         display: flex;
+        position: relative;
         align-items: center;
         justify-content: space-between;
         text-align: center;
-        background-color: transparent;    
+        background-color: transparent; 
     }
     .mainbar h1 {
     background-color: transparent; 
@@ -72,14 +73,15 @@
         border: 1px solid #cad97c;
         border-radius: 25px;
         -moz-border-radius: 15px;
-        max-width: 80%;
+        max-width: 92%;
     }
     .mainbar {
         display: flex;
+        position: relative;
         align-items: center;
         justify-content: space-between;
         text-align: center;
-        background-color: transparent;    
+        background-color: transparent; 
     }
     .mainbar h1 {
     background-color: transparent;
@@ -87,7 +89,7 @@
     }
     .mainbar :hover {
         color: #f7ffcf;
-    }
+    } 
     .prof {
     background-color: transparent;
     padding: 5px;

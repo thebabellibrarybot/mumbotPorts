@@ -10,6 +10,11 @@ import HomeIcon from '../pgcomponents/homeicon';
 
 const Svg = () => {
 
+    // TODO make axios request for JSON array 
+    // to use as props sent down into standardized
+
+    const data = 'ome/homebaseicon'
+
     const { isDarkMode } = useTheme();
     const [visible, setVisible] = useState(false);
 
@@ -27,15 +32,9 @@ const Svg = () => {
             <div className={visible ? 'homeicons' : 'invisible'}>
                 <div className='slideicon'>
                     <SlideToggle/>
-                </div>
-                <div className='slideicon'>
                     <ManageUserIcon/>
-                </div>
-                <div className='slideicon'>
+                    <HomeIcon prop = {data}/>
                     <AboutContact/>
-                </div>
-                <div className='slideicon'>
-                    <HomeIcon/>
                 </div>
             </div>
 

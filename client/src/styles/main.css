@@ -14,13 +14,7 @@
 
 
 
-.slide {
-    background-color: transparent;
-}
-.obj {
-    display: inline;
-    width: 200px;
-}
+
 
 
 
@@ -41,7 +35,7 @@
 
 
 ::-webkit-scrollbar {
-    width: 80%;
+    width: 100%;
     background-color: transparent;
   } 
 /* Track */
