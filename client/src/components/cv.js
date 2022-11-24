@@ -8,7 +8,13 @@ import CVOBJ from '../pgcomponents/cvobj';
 
 const CV = () => {
 
+    // event listeners for change in url
+
+    // mk function for axios
+    // add function to componetDidMount call()
+
     const path = window.location.pathname;
+    console.log(path, 'path')
     const [data, setData] = useState();
     useEffect (() => {
         axios.get(`${path}`)
@@ -17,6 +23,9 @@ const CV = () => {
         })
         .catch((err) => console.log(err))
     }, [path])
+
+
+
 
     const { isDarkMode } = useTheme();
 
@@ -48,9 +57,6 @@ const CV = () => {
     )
 
 }
-
-
-
 export default CV;
 
 // mk CVOBJ just OBJ and pass props from backend to it

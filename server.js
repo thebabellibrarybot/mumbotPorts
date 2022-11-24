@@ -48,6 +48,7 @@ connection.once('open', () => {
 
 // get home info
 app.use('/home', getHomeBaseRoutes);
+app.use('/home/home', getHomeBaseRoutes);
 // get homebar info
 
 

@@ -1,0 +1,17 @@
+[
+    {
+        "icon_title": "login",
+        "icon_url": "localhost:3000/home/user",
+        "icon_message": "user icon"
+    },
+    {
+        "icon_title": "about // contact",
+        "icon_url": "localhost:3000/home/aboutcontact",
+        "icon_message": "message for home about"
+    },
+    {
+        "icon_title": "home",
+        "icon_url": "/",
+        "icon_message": "route back home"
+    }
+]

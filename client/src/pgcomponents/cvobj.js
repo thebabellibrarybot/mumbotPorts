@@ -1,5 +1,3 @@
-import image from '../cv.jpg';
-
 const usericon = (props) => {
     
     const data = props.props[0];
@@ -9,11 +7,10 @@ const usericon = (props) => {
     return (
         <div className="fullObj">
             <div className="mainObj">
-                <p>{data.title_head} icons</p>
-                <p>{data.base_subtitle}</p>
+                <p>{data.title_head}</p>
+
                 <div className='imgbox'>
-                    <p>imgbox</p>
-                    <img src = {image} alt = 'cvimg'/>
+                    <img src = {data.base_link} alt = 'cvimg'/>
                 </div>
 
             </div>
