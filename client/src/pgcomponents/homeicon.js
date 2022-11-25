@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import React from 'react';
 
 
@@ -10,16 +10,19 @@ const Homeicon = (props) => {
     const navigate = useNavigate();
     const iconTitle = props.prop;
     const url = props.url;
+    const img = props.img;
 
     function useLink() {
         console.log(url)
         navigate(url)
     }
+    
+// change so return will give diff options based off prop: iconTitle
 
     return (
-        <div className = 'aboutcontact'>
+        <div className = 'aboutcontact' onClick={useLink}>
             <p>{iconTitle}</p> 
-            <div className='out'><p onClick={useLink}> LINK LINK </p></div>
+            <img src = {img} alt = {iconTitle}></img>
         </div>    )
 }
 export default Homeicon;

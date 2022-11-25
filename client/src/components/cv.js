@@ -1,34 +1,25 @@
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import { useLocation } from "react-router-dom";
 
 import useTheme from "../hooks/useTheme"
 
 import HomeBaseIcon from '../pgcomponents/homeBaseIcon';
 import CVOBJ from '../pgcomponents/cvobj';
+import BackgroundSVG from '../pgcomponents/backgroundSVG';
 
 const CV = () => {
 
-    // event listeners for change in url
-
-    // mk function for axios
-    // add function to componetDidMount call()
-
-    const path = window.location.pathname;
-    console.log(path, 'path')
+    const hist = useLocation();
     const [data, setData] = useState();
     useEffect (() => {
-        axios.get(`${path}`)
+        axios.get(`${hist.pathname}`)
         .then((res) => {
             setData(res.data)
         })
         .catch((err) => console.log(err))
-    }, [path])
-
-
-
-
+    }, [hist])
     const { isDarkMode } = useTheme();
-
     const [visible, setVisible] = useState(false);
     function onoffClick() {
         setVisible(!visible)
@@ -37,6 +28,7 @@ const CV = () => {
     if (data === undefined) {
         return <>Still loading...might not ever stop...</>; 
         }
+    console.log(data[0].base_image)
 
     return (
         <div className={isDarkMode ? 'light' : 'dark'}>
@@ -51,6 +43,9 @@ const CV = () => {
                 <div className = 'listobj'>
                     <CVOBJ props = {data}/>
                 </div>
+            </div>
+            <div className="backgroundSVGIMG">
+                <BackgroundSVG prop = {data[0].base_image}/>
             </div>
         </div>
     </div>

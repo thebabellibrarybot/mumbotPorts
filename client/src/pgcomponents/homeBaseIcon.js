@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import PicDark from '../Vector 1.png';
-import PicLight from '../Vector 1 light.png'
 import SlideToggle from './slideToggle';
 import useTheme from '../hooks/useTheme';
 import HomeIcon from '../pgcomponents/homeicon';
@@ -11,7 +9,8 @@ const Svg = () => {
 
     // TODO make axios request for JSON array 
     // to use as props sent down into standardized
-
+    const lightPic = 'https://mumbotportbuk.s3.amazonaws.com/Group+1.svg';
+    const darkPic = 'https://mumbotportbuk.s3.amazonaws.com/Group+1+dark.svg';
     const [data, setData] = useState(null)
     
     useEffect (() => {
@@ -30,7 +29,7 @@ const Svg = () => {
         setVisible(!visible)
     }
 
-    const pic = (isDarkMode ? PicLight : PicDark)
+    const pic = (isDarkMode ? lightPic : darkPic)
     
     if (data === undefined) {
         return <>Still loading...might not ever stop...</>; 
@@ -45,7 +44,7 @@ const Svg = () => {
                     <SlideToggle/>
                     {data && data.map((d, i) => {
                         return (
-                            <HomeIcon key = {i} prop = {d.icon_title} url = {d.icon_url}/>
+                            <HomeIcon key = {i} prop = {d.icon_title} url = {d.icon_url} img = {d.icon_message}/>
                             )
                     }) }
                     

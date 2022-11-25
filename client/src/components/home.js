@@ -38,17 +38,15 @@ const Home = () => {
                     <ListObj/>
                 </div>
             </div>
-            <SVG/>
+            <SVG/> 
         </div>
     </div>
     )
 
 }
-
-
-
 export default Home
 
+// add prop to SVG
 
 
 /* bib 
