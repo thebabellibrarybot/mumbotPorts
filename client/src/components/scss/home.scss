@@ -1,3 +1,5 @@
+@import './colors';
+
 .light {
     .homepage {
         position: absolute;
@@ -18,8 +20,8 @@
         text-align: center;
         padding: 10px;
         z-index: 9;
-        background-color: #ffffff7d;
-        border: 1px solid rgb(180, 179, 179);
+        background-color: $background-main;
+        border: 1px solid $border-main;
         border-radius: 25px;
         -moz-border-radius: 15px;
         max-width: 92%;
@@ -34,10 +36,10 @@
     }
     .mainbar h1 {
     background-color: transparent; 
-    color: #999999;
+    color: $text-main;
     }
     .mainbar :hover {
-        color: #5c5c5c;
+        color: $text-hover;
     }
     .prof {
     background-color: transparent;
@@ -59,7 +61,7 @@
         text-align: center;
         height: 100%;
         width: 100%;
-        background-color: rgb(23, 25, 44);
+        background-color: $dark-background-main;
     }
     .welcomebar {
         z-index: 9;
@@ -70,7 +72,7 @@
         padding: 10px;
         z-index: 9;
         background-color: transparent;
-        border: 1px solid #cad97c;
+        border: 1px solid $dark-border-main;
         border-radius: 25px;
         -moz-border-radius: 15px;
         max-width: 92%;
@@ -85,10 +87,10 @@
     }
     .mainbar h1 {
     background-color: transparent;
-    color: rgb(202, 217, 124);
+    color: $dark-text-p;
     }
     .mainbar :hover {
-        color: #f7ffcf;
+        color: $dark-text-hover;
     } 
     .prof {
     background-color: transparent;

@@ -4,8 +4,8 @@ import useTheme from '../hooks/useTheme';
 
 const Svg = () => {
 
-    const lightPic = 'https://mumbotportbuk.s3.amazonaws.com/standing+bird.svg'
-    const darkPic = 'https://mumbotportbuk.s3.amazonaws.com/standing+bird+dark.png';
+    const lightPic = 'https://mumbotportbuk.s3.amazonaws.com/standing+bird+two.svg'
+    const darkPic = 'https://mumbotportbuk.s3.amazonaws.com/standing+bird+dark+svg.svg';
     const { isDarkMode } = useTheme();
 
     if (isDarkMode === true) {
