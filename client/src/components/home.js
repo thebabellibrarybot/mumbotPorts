@@ -26,27 +26,27 @@ const Home = () => {
     <div className={isDarkMode ? 'light' : 'dark'}>
         <div className='homepage'>
             <div className='welcomebar'>
+                
                 <div className='mainbar'>
                     <h1 onClick={onoffClick}>Welcome</h1>
                     <div className='prof'>
                         <HomeBaseIcon/>
                     </div>
                 </div>
+
                 <div class = {visible ? 'listobj' : 'invisible'}>
                     <ListObj/>
                 </div>
             </div>
-            <SVG/>
+            <SVG/> 
         </div>
     </div>
     )
 
 }
-
-
-
 export default Home
 
+// add prop to SVG
 
 
 /* bib 

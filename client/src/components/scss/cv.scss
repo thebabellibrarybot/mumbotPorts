@@ -1,5 +1,5 @@
 .light {
-    .homepage {
+    .homepg {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -10,47 +10,48 @@
         width: 100%;
         background-color: transparent;
     }
-    .welcomebar {
+    .infobar {
         z-index: 9;
         display: inline;
         align-items: center;
         vertical-align: middle;
         text-align: center;
         padding: 10px;
+        width: 80%;
+        height: 80%;
         z-index: 9;
         background-color: #ffffff7d;
         border: 1px solid rgb(180, 179, 179);
         border-radius: 25px;
         -moz-border-radius: 15px;
-        max-width: 92%;
+        max-width: 80%;
     }
-    .mainbar {
+    .titlebar {
         display: flex;
-        position: relative;
         align-items: center;
         justify-content: space-between;
         text-align: center;
-        background-color: transparent; 
+        background-color: transparent;    
     }
-    .mainbar h1 {
+    .titlebar h1 {
     background-color: transparent; 
     color: #999999;
     }
-    .mainbar :hover {
-        color: #5c5c5c;
-    }
-    .prof {
+    .iconbar {
     background-color: transparent;
     padding: 5px;
     }
-    .prof p {
+    .iconbar p {
         background-color: transparent;
+    }
+    .listobj {
+        height: 85%;
     }
 }
 
 
 .dark {
-    .homepage {
+    .homepg {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -61,40 +62,42 @@
         width: 100%;
         background-color: rgb(23, 25, 44);
     }
-    .welcomebar {
+    .infobar {
         z-index: 9;
         display: inline;
         align-items: center;
         vertical-align: middle;
         text-align: center;
-        padding: 10px;
+        padding: 30px;
+        width: 80%;
+        height: 80%;
         z-index: 9;
         background-color: transparent;
-        border: 1px solid #cad97c;
+        border: 1px solid rgb(202, 217, 124);
         border-radius: 25px;
         -moz-border-radius: 15px;
-        max-width: 92%;
+        max-width: 80%;
     }
-    .mainbar {
+    .titlebar {
         display: flex;
-        position: relative;
         align-items: center;
         justify-content: space-between;
         text-align: center;
-        background-color: transparent; 
+        background-color: transparent;   
+
     }
-    .mainbar h1 {
+    .titlebar h1 {
     background-color: transparent;
     color: rgb(202, 217, 124);
     }
-    .mainbar :hover {
-        color: #f7ffcf;
-    } 
-    .prof {
+    .iconbar {
     background-color: transparent;
     padding: 5px;
     }
-    .prof p {
+    .iconbar p {
         background-color: transparent;
+    }
+    .listobj {
+        height: 85%;
     }
 }

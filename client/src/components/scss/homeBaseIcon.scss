@@ -1,13 +1,12 @@
 .light {
     background-color: transparent;
-
     .invisible {
         display: none;
     }
     .svg1 img {
-        padding: 3px;
-        height: 15%;
-        width: 15%;
+        padding: 8px;
+        height: 45px;
+        width: 45px;
         background-color: transparent;
     }
     .svg1{
@@ -20,18 +19,31 @@
         border-radius: 25px;
         -moz-border-radius: 15px;
     }
-    .homeicons {
-        display: flex;
+    .svg1 img:hover{
+        border: 1px solid #5c5c5c;
+        border-radius: 20px;
+        -moz-border-radius: 15px;
         background-color: transparent;
-        padding: 5px;
+    }
+    .homeicons {
+        background-color: transparent;
     }
     .homeicons p {
         color: #999999;
         background-color: transparent;
     }
     .slideicon {
-        border: 1px solid #b4b3b3;
+        display: flex;
+        overflow: auto;
         background-color: transparent;
+    }
+    .usericon {
+        background-color: transparent;
+        padding: 6px;
+    }
+    .aboutcontact {
+        background-color: transparent;
+        padding: 6px;
     }
 }
 
@@ -42,9 +54,9 @@
         display: none;
     }
     .svg1 img {
-        padding: 3px;
-        height: 15%;
-        width: 15%;
+        padding: 8px;
+        height: 45px;
+        width: 45px;
         background-color: transparent;
     }
     .svg1{
@@ -57,17 +69,31 @@
         border-radius: 25px;
         -moz-border-radius: 15px;
     }
-    .homeicons {
-        display: flex;
+    .svg1 img:hover {
+        border: 1px solid #f7ffcf;
+        border-radius: 20px;
+        -moz-border-radius: 15px;
         background-color: transparent;
-        padding: 5px;
+    }
+    .homeicons {
+        background-color: transparent;
     }
     .homeicons p {
         color: hwb(70 49% 15%);
         background-color: transparent;
     }
     .slideicon {
-        border: 1px solid #cad97c;
+        display: flex;
+        overflow: auto;
         background-color: transparent;
     }
+    .usericon {
+        background-color: transparent;
+        padding: 6px;
+    }
+    .aboutcontact {
+        background-color: transparent;
+        padding: 6px;
+    }
+
 }

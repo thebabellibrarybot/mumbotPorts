@@ -6,8 +6,7 @@ const ThemeProvider = ({children}) => {
     
     // add state saver in local storage for onload...
 
-    const [isDarkMode, setIsDarkMode] = useState(false);
-    console.log(isDarkMode, 'is darkmode from themeProvider')
+    const [isDarkMode, setIsDarkMode] = useState(true);
     const toggleDarkMode = () => {
         setIsDarkMode(curr => !curr)
     }

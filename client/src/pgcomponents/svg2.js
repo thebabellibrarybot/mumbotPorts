@@ -1,20 +1,18 @@
-
 import React from 'react';
-import Pic from '../standing bird.svg';
-import DarkPic from '../standing bird dark.png';
 
 import useTheme from '../hooks/useTheme';
 
-
 const Svg = () => {
 
+    const lightPic = 'https://mumbotportbuk.s3.amazonaws.com/standing+bird.svg'
+    const darkPic = 'https://mumbotportbuk.s3.amazonaws.com/standing+bird+dark.png';
     const { isDarkMode } = useTheme();
 
     if (isDarkMode === true) {
         return (
             <div className = 'svg'>
                 
-                <img src = {Pic} alt = 'one'/>
+                <img src = {lightPic} alt = 'one'/>
                 
             </div>
         )
@@ -23,14 +21,11 @@ const Svg = () => {
         return (
             <div className = 'svg'>
                 
-                <img src = {DarkPic} alt = 'one'/>
+                <img src = {darkPic} alt = 'one'/>
                 
             </div>
         )
     }
 
 }
-
-
-
 export default Svg;

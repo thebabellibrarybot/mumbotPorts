@@ -11,9 +11,7 @@ const SlideToggle = () => {
     
     const { isDarkMode }  = useTheme();
     const { toggleDarkMode } = useTheme();
-    console.log(isDarkMode, 'from slider')
     const [checked, setChecked] = useState(false)
-    console.log(checked, 'from slider')
 
     function switchTheme () {
         
@@ -27,7 +25,7 @@ const SlideToggle = () => {
     <div className='switch'>
         <p className='txt'>mode: {isDarkMode ? 'light' : 'dark'}</p>
         <ReactSwitch onChange={switchTheme} checked={checked}/>
-    </div>
+    </div> 
     </div>
     )
 

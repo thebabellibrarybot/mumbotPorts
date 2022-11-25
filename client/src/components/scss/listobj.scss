@@ -1,28 +1,31 @@
 .light {
     .homelist {
         background-color: transparent;
-    }
+    } 
     .slots {
         display: flex;
         text-align: center;
         align-items: center;
-        justify-content: center;
         background-color: transparent;
         border: 1px solid #b4b3b3;
         border-radius: 25px;
         -moz-border-radius: 15px;
         background-color: #ffffff7d;
-        overflow-x: scroll
-    
+        overflow: auto;
     }
     .slots p {
-        padding: 2rem;
+        padding: 10px;
         background-color: transparent;
         color: #999999;
     }
-    .out {
-        padding: 10px;
+    .out p{
         background-color: transparent;
+    }
+    .out {
+        background-color: transparent;
+    }
+    .out :hover {
+        color: #5c5c5c;
     }
 }
 
@@ -34,22 +37,31 @@
         display: flex;
         text-align: center;
         align-items: center;
-        justify-content: center;
         background-color: transparent;
         border: 1px solid #cad97c;
         border-radius: 25px;
         -moz-border-radius: 15px;
-        background-color: #4950288e;
-        overflow-x: scroll
-    
+        background-color: #3c42218e;
+        overflow: auto;
     }
+
     .slots p {
-        padding: 2rem;
+        padding: 10px;
         background-color: transparent;
         color: #cad97c;
     }
-    .out {
-        padding: 10px;
+    .out p{
         background-color: transparent;
+    }
+    .out {
+        background-color: transparent;
+    }
+    .out {
+        padding: 5px;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    .out :hover {
+        color: #fbffe7;
     }
 }
