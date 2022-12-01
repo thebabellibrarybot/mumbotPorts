@@ -34,7 +34,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div class = {visible ? 'listobj' : 'invisible'}>
+                <div className = {visible ? 'listobj' : 'invisible'}>
                     <ListObj/>
                 </div>
             </div>
