@@ -28,7 +28,6 @@ const CV = () => {
     if (data === undefined) {
         return <>Still loading...might not ever stop...</>; 
         }
-    console.log(data[0].base_image)
 
     return (
         <div className={isDarkMode ? 'light' : 'dark'}>

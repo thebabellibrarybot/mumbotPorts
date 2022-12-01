@@ -7,19 +7,14 @@ import useTheme from '../hooks/useTheme';
 
 const SlideToggle = () => {
 
-
-    
     const { isDarkMode }  = useTheme();
     const { toggleDarkMode } = useTheme();
     const [checked, setChecked] = useState(false)
 
     function switchTheme () {
-        
         toggleDarkMode()
-        setChecked(curr => !curr);
-        
+        setChecked(curr => !curr);   
     }
-
     return (
     <div className={isDarkMode ? 'light':'dark'}>
     <div className='switch'>
@@ -28,7 +23,5 @@ const SlideToggle = () => {
     </div> 
     </div>
     )
-
 }
-
 export default SlideToggle

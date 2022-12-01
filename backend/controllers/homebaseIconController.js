@@ -6,7 +6,6 @@ const getHomeBaseIconInfo = async (req, res) => {
     if (!homebaseiconinfo){
         return res.status(404).json({err:'no such homebaseinfo'})
     }
-    console.log(homebaseiconinfo, 'homebaseiconinfo')
     res.status(200).json(homebaseiconinfo)
 
 }

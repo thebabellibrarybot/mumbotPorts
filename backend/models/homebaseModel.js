@@ -10,7 +10,7 @@ const homebaseSchema = new Schema ({
     base_link: { type: String, requried: false },
     base_title: { type: String, requred: false },
     base_subtitle: { type: String, required: false },
-    base_cont: [{ type: String, required: false }]
+    base_cont: [{ type: Array, required: false }]
 })
 
 const HomeBaseModel = mongoose.model('homebaseinfo', homebaseSchema);
