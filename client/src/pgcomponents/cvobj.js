@@ -17,7 +17,16 @@ const usericon = (props) => {
         </div>
     )
     if (data.title_head === 'about // contact') return (
-        <p>TBD</p>
+        <div className="fullCont">
+            <div className="cont">
+                <h1>Main cont</h1>
+                <p>base cont</p>
+            </div>
+            <div className="image">
+                <img src = "https://mumbotportbuk.s3.amazonaws.com/lines_me.jpg" alt = "alt"/>
+                <p>-------------------------------------------------</p>
+            </div>
+        </div>
     )
 }
 export default usericon;

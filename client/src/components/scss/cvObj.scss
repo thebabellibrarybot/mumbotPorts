@@ -39,6 +39,37 @@
         border-radius: 25px;
         -moz-border-radius: 15px;
     }
+    .fullCont {
+        display: flex;
+        height: 99%;
+        background-color: transparent;
+
+    }
+    .cont {
+        border: 1px solid black;
+        width: 50%;
+        background-color: transparent;
+        justify-content: center;
+        text-align: center;
+    }
+    .image {
+    width: 50%;
+    height: 70%;
+    background-color: transparent;
+    justify-content: center;
+    text-align: center;
+    }
+    .image img {
+        height: 100%;
+        background-color: transparent;
+        border-radius: 25px;
+        -moz-border-radius: 15px;
+    }
+    .image p {
+        height: 20%;
+        padding: 10px;
+        background-color: transparent;
+    }
 
 }
 .dark {
