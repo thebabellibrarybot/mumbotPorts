@@ -9,8 +9,8 @@ const BackgroundSVG = (prop) => {
 
     return (
         <div className="bgsvg">
-            <img src = {isDarkMode? light : dark}></img>
+            <img src = {isDarkMode? light : dark} alt = 'alt'></img>
         </div>
     )
 }
-export default BackgroundSVG;
+export default BackgroundSVG; 
