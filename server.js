@@ -66,5 +66,5 @@ if(process.env.NODE_ENV === 'production') {
 }
 // port and clear run statements;
 app.listen(Port, () => {
-    console.log(`listening on 4000`)
-});
+    console.log(`listening on 4000`, Port)
+}); 
