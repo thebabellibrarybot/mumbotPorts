@@ -9,7 +9,7 @@ const corsOptions = require('./backend/config/corsOptions');
 const credentials = require('./backend/middleware/credentials');
  
 const getHomeBaseRoutes = require('./backend/routes/homebaseRoute');
-
+// NOT IMPLIMENTED YET const getPortTreeRoutes = require('./backend/routes/portTreeRoute');
 
 const mongoose = require('mongoose');
 const app = express();
@@ -49,6 +49,8 @@ connection.once('open', () => {
 // get home info
 app.use('/home', getHomeBaseRoutes);
 app.use('/home/home', getHomeBaseRoutes);
+app.use('/mumbots', getHomeBaseRoutes);
+// NOT IMPLIMENTED YER app.use('/mumbots', getPortTreeRoutes);
 // get homebar info
 
 

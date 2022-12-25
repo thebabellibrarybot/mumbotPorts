@@ -34,6 +34,7 @@ const Svg = () => {
     if (data === undefined) {
         return <>Still loading...might not ever stop...</>; 
         }
+    console.log(data, 'data from homebaseicon axios req')
 
     return (
         <div className= {isDarkMode ? 'light' : 'dark'} >

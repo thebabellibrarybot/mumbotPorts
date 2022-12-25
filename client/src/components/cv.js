@@ -38,7 +38,7 @@ const CV = () => {
                     <div className='iconbar'>
                         <HomeBaseIcon/>
                     </div> 
-                </div>
+                </div> 
                 <div className = 'listobj'>
                     <CVOBJ props = {data}/>
                 </div>

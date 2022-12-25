@@ -1,0 +1,35 @@
+12.25.22
+
+- fix darkmode home screen
+- install figma to this cpu
+- fix about // contact image as .svg
+- add content to about // contact
+- add standard bckgrd color to darkmode viewer
+- mk page for templates && page for wireframes
+- mk page for random examples:: client contact, product detail, job details, job list, ect.
+- add falling leaf animation to homepage
+- mk linktree for all links
+- mk portfolio for all wireframes and templates
+
+MUMBOTPORTS programming:
+- mk linkTree design
+- mk linkTree page
+- mk linkTree backend
+- mk linkTree content x2
+
+- mk portfolio page
+- mk portfolio page 
+- mk portfolio backend
+- mk portfolio content x2
+
+- fix content in about // contact for darkmode
+
+- add content to home page with leaf animate from figma
+
+MUMBOTPORTS DEVOps:
+- mk ec2 instances
+- install nvm, node, npm, and nginx to AMI 
+- configure and start nginx server
+- mk route 53 url
+- mk elastic beanstalk url thinggy
+- connect url to instances 

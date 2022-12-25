@@ -2,10 +2,9 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Routes} from  'react-router-dom';
 
 import Home from './components/home';
-import BabPort from './components/babPort';
-import LionPort from './components/LiandUnPort';
-import BhgPort from './components/bhgPort';
 import Cv from './components/cv.js';
+import Portfolio from './components/portfolio.js';
+import LinkTree from './components/LinkTree.js';
 
 import ThemeProvider from './context/themeProvider';
 // specific themes
@@ -28,10 +27,9 @@ function App() {
 
 
           <Routes>
-            <Route path = "/babport" element = { <BabPort/> }/>
-            <Route path = "/lionport" element = { <LionPort /> }/>
-            <Route path = "/bhgport" element = { <BhgPort/> }/>
+            <Route path = "/mumbots/linkTree" element = { <LinkTree/> }/>
             <Route path = "/home/:id" element = { <Cv/> }/>
+            <Route path = "/mumbots/portfolio" element = { <Portfolio/> }/>
           </Routes>
 
 
