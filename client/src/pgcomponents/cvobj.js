@@ -19,12 +19,20 @@ const usericon = (props) => {
     if (data.title_head === 'about // contact') return (
         <div className="fullCont">
             <div className="cont">
-                <h1>Main cont</h1>
+                <h1>{data.title_head} page</h1>
                 <p>base cont</p>
             </div>
             <div className="image">
                 <img src = "https://mumbotportbuk.s3.amazonaws.com/lines_me.jpg" alt = "alt"/>
                 <p>-------------------------------------------------</p>
+            </div>
+        </div>
+    )
+    if (data.title_head === 'login') return (
+        <div className="fullCont">
+            <div className="cont">
+                <h1>{data.title_head} page</h1>
+                <p>{data.base_subtitle}</p>
             </div>
         </div>
     )
