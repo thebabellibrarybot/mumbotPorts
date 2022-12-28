@@ -10,10 +10,36 @@ import HomeBaseIcon from '../pgcomponents/homeBaseIcon';
 const LinkTree = () => {
 
     const { isDarkMode } = useTheme();
-    const [visible, setVisible] = useState(false);
+    const [BHG, setBHG] = useState(false);
+    const [TAC, setTAC] = useState(false);
+    const [LionUni, setLionUni] = useState(false);
+    const [Ind, setInd] = useState(false)
 
-    function onoffClick() {
-        setVisible(!visible)
+    function onoffClick(props) {
+        if (props === 'BHG') {
+            setBHG(!BHG)
+            setTAC(false)
+            setLionUni(false)
+            setInd(false)
+        }
+        if (props === 'TAC') {
+            setBHG(false)
+            setTAC(true)
+            setLionUni(false)
+            setInd(false)
+        }
+        if (props === 'LionUni') {
+            setBHG(false)
+            setTAC(false)
+            setLionUni(!LionUni)
+            setInd(false)
+        }
+        if (props === 'Ind') {
+            setInd(!Ind)
+            setBHG(false)
+            setLionUni(false)
+            setTAC(false)
+        }
     }
     
     return (
@@ -29,14 +55,14 @@ const LinkTree = () => {
             <div className='linktree-base'>
 
                 <div className="linktree-obj">
-                    <div className="main-obj" onClick={onoffClick}>
+                    <div className="main-obj" onClick={()=>onoffClick('BHG')}>
                         <h1>BHG</h1>
                         <div className="svg-obj">
                             <img src = 'img' alt = 'img'></img>
                         </div>
                     </div>
 
-                    <div className={visible ? "ext-obj" : "invisible"}>
+                    <div className={BHG ? "ext-obj" : "invisible"}>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                     </div>
                 </div>
@@ -50,13 +76,13 @@ const LinkTree = () => {
             <div className='linktree-base'>
 
                 <div className="linktree-obj">
-                    <div className="main-obj" onClick={onoffClick}>
+                    <div className="main-obj" onClick={()=>onoffClick('TAC')}>
                         <h1>main obj 1</h1>
                         <div className="svg-obj">
                             <img src = 'img' alt = 'img'></img>
                         </div>
                     </div>
-                    <div className={visible ? "ext-obj" : "invisible"}>
+                    <div className={TAC ? "ext-obj" : "invisible"}>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldext objus PageMaker including versions of Lorem Ipsum.</p>
                     </div>
                 </div>
@@ -70,13 +96,13 @@ const LinkTree = () => {
             <div className='linktree-base'>
 
                 <div className="linktree-obj">
-                    <div className="main-obj" onClick={onoffClick}>
-                        <h1>main obj 1</h1>
+                    <div className="main-obj" onClick={()=>onoffClick('LionUni')}>
+                        <h1>main obj 2</h1>
                         <div className="svg-obj">
                             <img src = 'img' alt = 'img'></img>
                         </div>
                     </div>
-                    <div className={visible ? "ext-obj" : "invisible"}>
+                    <div className={LionUni ? "ext-obj" : "invisible"}>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                     </div>
                 </div>
@@ -90,13 +116,13 @@ const LinkTree = () => {
             <div className='linktree-base'>
 
                 <div className="linktree-obj">
-                    <div className="main-obj" onClick={onoffClick}>
-                        <h1>main obj 1</h1>
+                    <div className="main-obj" onClick={()=>onoffClick('Ind')}>
+                        <h1>main obj 3</h1>
                         <div className="svg-obj">
                             <img src = 'img' alt = 'img'></img>
                         </div>
                     </div>
-                    <div className={visible ? "ext-obj" : "invisible"}>
+                    <div className={Ind ? "ext-obj" : "invisible"}>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                     </div>
                 </div>
