@@ -3,7 +3,7 @@ import { useState } from "react";
 import useTheme from "../hooks/useTheme"
 
 import HomeBaseIcon from '../pgcomponents/homeBaseIcon';
-import Svg from "../pgcomponents/svg2";
+//import Svg from "../pgcomponents/svg2";
 //import CVOBJ from '../pgcomponents/cvobj';
 //import BackgroundSVG from '../pgcomponents/backgroundSVG';
 
@@ -21,7 +21,7 @@ const LinkTree = () => {
 
             <div className='titlebar'>
                 <h1>LinkTree</h1>
-                <div className='icon-bar'>
+                <div className='iconbar'>
                     <HomeBaseIcon/>
                 </div> 
             </div>
@@ -107,10 +107,17 @@ const LinkTree = () => {
 
             </div>
 
-            <Svg></Svg>
-
         </div>
     )
 
 }
 export default LinkTree;
+
+
+/* 
+BIB:
+
+toggle one (el):
+https://forum.freecodecamp.org/t/react-how-to-toggle-a-single-instance-of-a-react-element/189827
+
+*/ 

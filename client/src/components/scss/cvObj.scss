@@ -1,3 +1,5 @@
+@import './colors';
+
 .light {
     .fullObj {
         background-color: transparent;
@@ -32,25 +34,33 @@
         height: 85%;
         overflow-y: scroll;
         padding: 5px;
-        
     }
     .imgbox img {
         width: 100%;
-        border-radius: 25px;
+        border-radius: 25px; 
         -moz-border-radius: 15px;
     }
     .fullCont {
         display: flex;
-        height: 99%;
+        height: 90%;
         background-color: transparent;
-
     }
     .cont {
-        border: 1px solid black;
+        border: 1px solid #b4b3b3;
+        border-radius: 19px;
         width: 50%;
         background-color: transparent;
         justify-content: center;
         text-align: center;
+        background-color: transparent;
+    }
+    .cont h1 {
+        background-color: transparent;
+        color: #b4b3b3;
+    }
+    .cont p {
+        background-color: transparent;
+        color: #b4b3b3;
     }
     .image {
     width: 50%;
@@ -70,7 +80,40 @@
         padding: 10px;
         background-color: transparent;
     }
-
+    .full-login {
+        display: inline;
+        height: 90%;
+        background-color: transparent;
+        padding: 10px;
+    }
+    .login-cont {
+        border: 1px dashed $bird-outline;
+        background-color: $bird-fill;
+        padding: 10px;
+        border-radius: 19px;
+    }
+    .login-cont h1{
+        color: $bird-outline;
+        background-color: transparent;
+    }
+    .login-cont p {
+        color: $bird-outline;
+        background-color: transparent;
+    }
+    .login-git {
+        min-height: 80%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .login-git img{
+        background-color: transparent;
+        height: 200px;
+        position: absolute;
+        border: 1px dashed $bird-outline;
+        border-radius: 19px;
+    }
 }
 .dark {
     .fullObj {
@@ -106,6 +149,40 @@
         border-radius: 25px;
         -moz-border-radius: 15px;
     }
-  
+
+    .full-login {
+        display: inline;
+        height: 90%;
+        background-color: transparent;
+        padding: 10px;
+    }
+    .login-cont {
+        border: 1px dashed $bird-fill;
+        background-color: $bird-outline;
+        padding: 10px;
+        border-radius: 19px;
+    }
+    .login-cont h1{
+        color: $bird-fill;
+        background-color: transparent;
+    }
+    .login-cont p {
+        color: $bird-fill;
+        background-color: transparent;
+    }
+    .login-git {
+        min-height: 80%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .login-git img{
+        background-color: transparent;
+        height: 200px;
+        position: absolute;
+        border: 1px dashed $bird-fill;
+        border-radius: 19px;
+    }
  
 }
