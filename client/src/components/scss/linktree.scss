@@ -2,18 +2,16 @@
     .linktree-base {
         display: flex;
         align-items:flex-end;
-        justify-content: center;
         text-align: center;
         background-color: transparent;
         padding: 1%;
     }
     .linktree-obj {
-        min-width: 30%;
-        max-width: 40%;
+        width: 30%;
         padding: 10px;
         border: 1px solid #b4b3b3;
         border-radius: 10px;
-        background-color: transparent;
+        margin-left: 10%;
     }
     .main-obj {
         text-align: center;

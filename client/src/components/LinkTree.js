@@ -5,16 +5,18 @@ import useTheme from "../hooks/useTheme"
 import HomeBaseIcon from '../pgcomponents/homeBaseIcon';
 //import Svg from "../pgcomponents/svg2";
 //import CVOBJ from '../pgcomponents/cvobj';
-//import BackgroundSVG from '../pgcomponents/backgroundSVG';
+import BackgroundSVG from '../pgcomponents/backgroundSVG';
 
 const LinkTree = () => {
+
+    const arr = ['https://mumbotportbuk.s3.amazonaws.com/jumpingBird.svg', 'https://mumbotportbuk.s3.amazonaws.com/jumping+bird+dark.svg']
 
     const { isDarkMode } = useTheme();
     const [BHG, setBHG] = useState(false);
     const [TAC, setTAC] = useState(false);
     const [LionUni, setLionUni] = useState(false);
     const [Ind, setInd] = useState(false)
-
+ 
     function onoffClick(props) {
         if (props === 'BHG') {
             setBHG(!BHG)
@@ -24,7 +26,7 @@ const LinkTree = () => {
         }
         if (props === 'TAC') {
             setBHG(false)
-            setTAC(true)
+            setTAC(!TAC)
             setLionUni(false)
             setInd(false)
         }
@@ -33,7 +35,7 @@ const LinkTree = () => {
             setTAC(false)
             setLionUni(!LionUni)
             setInd(false)
-        }
+        } 
         if (props === 'Ind') {
             setInd(!Ind)
             setBHG(false)
@@ -44,8 +46,8 @@ const LinkTree = () => {
     
     return (
         <div className={isDarkMode ? 'light' : 'dark'}>
-
-            <div className='titlebar'>
+   
+   <div className='titlebar'>
                 <h1>LinkTree</h1>
                 <div className='iconbar'>
                     <HomeBaseIcon/>
@@ -57,7 +59,7 @@ const LinkTree = () => {
                 <div className="linktree-obj">
                     <div className="main-obj" onClick={()=>onoffClick('BHG')}>
                         <h1>BHG</h1>
-                        <div className="svg-obj">
+                        <div className={BHG ? "invisible" : "svg-obj"}>
                             <img src = 'img' alt = 'img'></img>
                         </div>
                     </div>
@@ -77,8 +79,8 @@ const LinkTree = () => {
 
                 <div className="linktree-obj">
                     <div className="main-obj" onClick={()=>onoffClick('TAC')}>
-                        <h1>main obj 1</h1>
-                        <div className="svg-obj">
+                        <h1>TAC</h1>
+                        <div className={TAC ? "invisible" : "svg-obj"}>
                             <img src = 'img' alt = 'img'></img>
                         </div>
                     </div>
@@ -88,7 +90,7 @@ const LinkTree = () => {
                 </div>
 
                 <div className="linktree-date">
-                    <p>date1</p>
+                    <p>2019</p>
                 </div>
 
             </div>
@@ -97,8 +99,8 @@ const LinkTree = () => {
 
                 <div className="linktree-obj">
                     <div className="main-obj" onClick={()=>onoffClick('LionUni')}>
-                        <h1>main obj 2</h1>
-                        <div className="svg-obj">
+                        <h1>Lion and Unicorn</h1>
+                        <div className={LionUni ? "invisible" : "svg-obj"}>
                             <img src = 'img' alt = 'img'></img>
                         </div>
                     </div>
@@ -108,7 +110,7 @@ const LinkTree = () => {
                 </div>
 
                 <div className="linktree-date">
-                    <p>date1</p>
+                    <p>2020</p>
                 </div>
 
             </div>
@@ -117,8 +119,8 @@ const LinkTree = () => {
 
                 <div className="linktree-obj">
                     <div className="main-obj" onClick={()=>onoffClick('Ind')}>
-                        <h1>main obj 3</h1>
-                        <div className="svg-obj">
+                        <h1>Indpendant Contracts</h1>
+                        <div className={Ind ? "invisible" : "svg-obj"}>
                             <img src = 'img' alt = 'img'></img>
                         </div>
                     </div>
@@ -128,12 +130,15 @@ const LinkTree = () => {
                 </div>
 
                 <div className="linktree-date">
-                    <p>date1</p>
+                    <p>2020-current</p>
                 </div>
 
             </div>
+            <div className="backgroundSVGIMG">
+                <BackgroundSVG prop = {arr}/>
+            </div>
+    </div>
 
-        </div>
     )
 
 }
