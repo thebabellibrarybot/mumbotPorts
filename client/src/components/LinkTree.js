@@ -152,3 +152,17 @@ toggle one (el):
 https://forum.freecodecamp.org/t/react-how-to-toggle-a-single-instance-of-a-react-element/189827
 
 */ 
+
+/*
+
+TODO:
+
+- add links to website
+- add clickables with things I designed for each place which 
+  link to the portfolio part of the website
+- add an about the company type of thing
+- mk and upload icons for each portal
+- mk Ind.Cont expandable
+- mk expandable from '/pgcomponents/expandable-linktree.js'
+
+*/

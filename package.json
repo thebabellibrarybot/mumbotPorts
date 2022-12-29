@@ -18,7 +18,7 @@
     "heroku-postbuild": "npm run install-client && npm run build"
   },
   "repository": {
-    "type": "git", 
+    "type": "git",
     "url": "mumbotPorts"
   },
   "author": "",
@@ -34,6 +34,7 @@
     "mongoose": "^6.7.2",
     "nodemon": "^2.0.20",
     "npm": "^9.1.2",
+    "react-drawline": "^1.1.0",
     "react-jwt": "^1.1.7",
     "react-scripts": "^5.0.1",
     "web-vitals": "^3.1.0"
